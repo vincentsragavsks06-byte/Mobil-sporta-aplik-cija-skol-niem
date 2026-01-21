@@ -39,8 +39,7 @@ def check_form(data):
         return ('email', 'Invalid email!')
     
     # for checking Phone Number
-    if not (Pattern.match(str(data['phone']))) 
-    or len(str(data['phone'])) != 10:
+    if not (Pattern.match(str(data['phone']))) or len(str(data['phone'])) != 10:
         return ('phone', 'Invalid phone!')
     
     # for checking Website URL
